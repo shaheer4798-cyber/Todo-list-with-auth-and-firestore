@@ -54,7 +54,7 @@ form.addEventListener('submit', (e) => {
     }
 
     addDoc(usersCollection, obj).then((res) => {
-      window.location.href = "../DataBase/index.html";
+      window.location.href = "./DataBase/index.html";
       console.log("User Added Successfully");
       getUsers();
     })
@@ -82,7 +82,7 @@ GoogleBtn.addEventListener("click", (e) => {
             console.log(userData);
             addDoc(usersCollection, userData).then((res) => {
               alert("Account Created Successfully");
-              window.location.href = "../DataBase/index.html";
+              window.location.href = "./DataBase/index.html";
               console.log("User Added Successfully");
               getUsers();
             })
@@ -110,7 +110,7 @@ signinBtn.addEventListener("click", (e) => {
         }
 
         addDoc(usersCollection, obj).then(() => {
-            window.location.href = "../DataBase/index.html";
+            window.location.href = "./DataBase/index.html";
             console.log("Document added");
         })
         .catch((err) => {
